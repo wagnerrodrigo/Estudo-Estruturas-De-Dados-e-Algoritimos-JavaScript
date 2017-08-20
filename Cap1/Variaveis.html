@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title> teste</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script>
+	var myVariable = 'global';
+var myOtherVariable = 'global';
+
+function myFunction() {
+	var myVariable = 'local';
+	return myVariable;
+}
+
+function myOtherFunctoin() {
+	myOtherVariable = 'local';
+	return myOtherVariable;
+}
+
+console.log(myVariable);
+console.log(myFunction());
+
+console.log(myOtherVariable);
+console.log(myOtherFunctoin()) // a função pega a variavel da linha 12 e munda o valor para local dentro da funçao
+console.log(myOtherVariable);	// por ter tido o valor trocado na função onterior e chamado novamente a variavel ela passa o valor que foi atribuida anterior
+
+
+		// var minhaVariavel = 'global';
+// minhaOutraVariavel = 'global';
+
+// function minhaFuncao(){
+// 	var minhaVariavel ='local';
+// 	return minhaVariavel;
+// }
+
+// function minhaOutraFuncao(){
+// 	minhaVariavel = 'local';
+// 	return minhaVariavel;
+// }
+
+// console.log(minhaVariaveln);
+// console.log(minhaFuncao());
+
+// console.log(minhaOutraVariavel);
+// console.log(minhaOutraFuncao());
+// console.log(minhaOutraVariavel);
+
+	</script>
+</body>
+</html>
+
