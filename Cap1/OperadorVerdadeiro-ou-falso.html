@@ -1,0 +1,37 @@
+=<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Jura a verdade somente a verdade !!!!</title>
+	<link rel="stylesheet" hre5f="">
+</head>
+<body>
+	<h1>Operador verdadeiro e falso</h1>
+
+	<script>
+		function testTruthy(val){
+			return val ? console.log('truthy') : console.log('falsy');
+		}
+		testTruthy(true);
+		testTruthy(false);
+		testTruthy(new Boolean(false));
+
+		testTruthy('');
+		testTruthy('O livro passa outro valor ');
+		testTruthy(new String(''));
+
+		testTruthy(1);
+		testTruthy(-1);
+		testTruthy(NaN);
+		testTruthy(new Number(NaN));
+		
+		testTruthy({});
+		
+		var obj = {name:'Wagner Rodrigo Da Silva'};
+		testTruthy(obj);
+		testTruthy(obj.name);
+		testTruthy(obj.age);
+	</script>
+</body>
+</html>[[]]
