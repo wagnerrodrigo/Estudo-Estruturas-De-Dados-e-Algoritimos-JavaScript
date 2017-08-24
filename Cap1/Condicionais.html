@@ -21,14 +21,22 @@
 			console.log("num is not equal to 1, the value of num is "+ num);
 		}
 
+		
 
-		if (num ===1) {
-			num--;
+		var num2 = 0; // tipo int 
+		var num3 = 1;
+
+		num2 = 'wagner'; // recebe uma string 
+		if (num2 === 1) { // faz a comparaçao de tipo no caso int com string
+			num2--;
+			console.log("O numero 2 é negativo: "+ num2); // como não e int
 		}else{
-			num++;
+			//num2++;
+			console.log("Se o tipo nao for igual a int então e string >>> "+ num2);	// então é string
 		}
 
-		(num === 1) ? num-- : num++;
+		// (num3 === '1') ? num-- : num++;
+		// console.log("outra forma de Condicionais if ternario " + num3);
 	</script>
 </body>
 </html>
